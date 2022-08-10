@@ -26,10 +26,8 @@
 
 		function calculaPontos(vitorias, empates, derrotas) {
 			return parseInt((vitorias * 3) + empates - derrotas);
-			mostra("O nosso time tem " + pontos + " pontos.");
-		}
-
-		
+			
+		}		
 
 		var cdcPontos = calculaPontos(vitoriasCDC, empatesCDC, derrotasCDC);
 		var lvPontos = calculaPontos(vitoriasLV, empatesLV, derrotasLV);
@@ -37,18 +35,18 @@
 		
 
 		if(cdcPontos > lvPontos) {
+			mostra("O nosso time está com " + cdcPontos + " pontos\nenquanto o LV FC está com " + lvPontos + " pontos.");
 			mostra("O nosso time está melhor que o Livros Velhos.");
 		}
 		if(cdcPontos < lvPontos) {
+			mostra("O nosso time está com " + cdcPontos + " pontos\nenquanto o LV FC está com " + lvPontos + " pontos.");
 			mostra("O nosso time está pior que o Livros Velhos.");
 		}
 		if(cdcPontos == lvPontos) {
+			mostra("O nosso time está com " + cdcPontos + " pontos\nenquanto o LV FC está com " + lvPontos + " pontos.");
 			mostra("O nosso time está empatado que o Livros Velhos.");
 		}
 
-
-
-	
 
 	</script>
  </head>
