@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+ <head>
+	<script>
+		
+		function pulaLinha() {
+			document.write("<br>");
+		}	
+	
+		function mostra(frase) {
+			document.write(frase);
+				pulaLinha();
+		}
+
+		var tentativas = 3;
+		var numeroPensado = Math.round(Math.random() * 10);
+		alert(numeroPensado);
+		
+
+		while(tentativas > 0) {
+			var chute = prompt("Adivinhe qual número entre 01 e 10.");
+			if(chute == numeroPensado) {
+			alert("Você acertou, o número  era " + numeroPensado + ".");
+				break;
+			}
+			
+							
+			if(numeroPensado > chute) {
+				tentativas -= 1;
+				alert("Você errou, o número é maior que o seu chute.\nVocê ainda tem " + tentativas +" tentativas.");
+			}
+			if(numeroPensado < chute) {
+				tentativas -= 1;
+				alert("Você errou, o número é menor que o seu chute.\nVocê ainda tem " + tentativas +" tentativas.");
+			} 
+			continue;
+			
+			
+		}
+	    alert("Acabaram as tentativas e o número secreto era: " + numeroPensado);
+
+		
+		
+		
+
+
+
+
+
+
+	
+
+	</script>
+ </head>
+		
+		
+</html>
